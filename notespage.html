@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>daddywhodaddyme</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="{{ url_for('static', filename='stylesheet.css') }}" rel="stylesheet" type="text/css" >
+
+
+
+</head>
+<body>
+    <div id="main">
+    <div id="mySidenav" class="sidenav ">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeinfo()">&times;</a>
+        <div class="container-fluid divInsideInfo ">
+          <br><br><br><br><br><br><br><br><br><br>
+          <div class='infoInside'>
+        <p>This is a Student Page for Madras Institute of Technology. Come on send in whatever the shit you want. Its yours babe :)
+        </p>
+      </div>
+        </div>
+      </div>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="col text-center pb-4">
+              <a href="/"  class="text-decoration-none blog-header-logo text-dark ">
+                  StudentPageMIT
+              </a>
+            </div>  
+          <div class="row header flex-nowrap d-flex justify-content-between align-items-center">
+        
+            <div class="col pt-1">
+                  <a class="text-decoration-none text-muted" onclick='notavailyet()' href="#">Enable Notification</a>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center">
+                <a href="#" onclick="openinfo()" class="text-decoration-none text-muted">Info</a>
+            </div> 
+          </div>
+      
+      </header>
+    <div class="nav-scroller py-1 mb-2">
+        <nav class="nav d-flex justify-content-center">
+            <a class="p-2 text-muted" href="/">News</a>
+            <!-- <a class="p-2 text-muted" href="#">Computer Society</a> 
+            <a class="p-2 text-muted" href="#">PDA</a>
+            <a class="p-2 text-muted" href="#">Rotary</a>
+            <a class="p-2 text-muted" href="#">YRC</a>
+            <a class="p-2 text-muted" href="#">NSO</a>
+            <a class="p-2 text-muted" href="#">NSS</a>
+            <a class="p-2 text-muted" href="#">Quiz club</a>
+            <a class="p-2 text-muted" href="#">TBO</a>
+            <a class="p-2 text-muted" href="#">Tamil Mandram</a>
+            <a class="p-2 text-muted" href="#">Variety</a>
+            <a class="p-2 text-muted" href="#">Mitra</a> -->
+            <a class="p-2 text-muted" href="#">Notes    </a> 
+
+
+        </nav>
+        </div>
+        <div class="jumbotron p-3 p-md-5 mb-3 text-white rounded colour-main">
+            <div class="row">
+                <div class="col-md-6 px-0">
+                  <h1 class="display-4 font-italic">NOTES</h1>
+                  <p class="lead my-3">New notes have been added as of now.</p>
+                  <!-- <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+                </div>
+                <div class="col-md-6">
+                    <!-- <img src="{{ url_for('static', filename='xDxa3Ql.png') }}" alt=""> -->
+                    <img class="card-img-right flex-auto d-none d-md-block" data-src="holder.js/200x250?theme=thumb" alt="Thumbnail [200x250]" style="width: 100%; height: 250px;" src="{{ url_for('static', filename='xDxa3Ql.png') }}" data-holder-rendered="true">
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-3 justify-content-center align-items-center" >
+            <div class="d-flex flex-wrap justify-content-center align-items-center " >
+                
+                <div class=" col-md-3 col-sm-6 m-2 b-2 px-3">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/aero">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour ">
+                                Aeronautical Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class=" col-md-3 col-sm-6 m-2 px-3 b-2">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/auto">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour ">
+                                Automobile Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class=" col-md-3 col-sm-6 m-2 px-3 b-2">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/ct">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour ">
+                                Computer Technology
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class=" col-md-3 col-sm-6 m-2 px-3 b-2">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/ece">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour ">
+                                Electronics Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class=" col-md-3 col-sm-6 m-2 px-3 b-2">
+                    <h3 class="mb-0">
+
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/it">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour ">
+                                Information Technology
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class=" col-md-3 col-sm-6 m-2 px-3 b-2">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/eni">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour ">
+                                Instrumentation Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class=" col-md-3 col-sm-6 m-2 px-3 b-2">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/mech">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour ">
+                                Mechanical Technology 
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class=" col-md-3 col-sm-6 m-2 px-3 b-2">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/prod">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour ">
+                                Production Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class=" col-md-3 col-sm-6 m-2 px-3 b-2">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/rpt">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour ">
+                                Rubber and Plastic Technology
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <!-- <div class="col-md-3 col-sm-6  mb-3 p-3">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/auto">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour">
+                                Aeronautical Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3  b-2 p-3">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name justify-content-center  align-items-center " href="/notes/ece">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour">
+                                Aeronautical Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3  p-3">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name  justify-content-center  align-items-center " href="/notes/eni">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour">
+                                Aeronautical Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div> -->
+            <!-- </div> -->
+            <!-- <div class="row justify-content-center align-items-center">  -->
+                <!-- <div class="col-md-3 col-sm-6 mb-3  p-3">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name  justify-content-center  align-items-center " href="/notes/ct">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour">
+                                Aeronautical Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+               - <div class="col-md-3 col-sm-6 mb-3  p-3">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name  justify-content-center  align-items-center " href="/notes/it">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour">
+                                Aeronautical Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class="ccol-md-3 col-sm-6 mb-3  p-3">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name  justify-content-center  align-items-center " href="/notes/rpt">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour">
+                                Aeronautical Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class="ccol-md-3 col-sm-6 mb-3  p-3">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name  justify-content-center  align-items-center " href="/notes/rpt">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour">
+                                Aeronautical Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>
+                <div class="ccol-md-3 col-sm-6 mb-3  p-3">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name  justify-content-center  align-items-center " href="/notes/rpt">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center text-center colour">
+                                Aeronautical Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div>  -->
+                <!-- <div class="col-md-6">
+                    <h3 class="mb-0">
+                        <a class="text-dark dept-name" href="#">
+                            <div class="card dept-post box-shadow justify-content-center align-items-center">
+                                Appli Engineering
+                            </div>
+                        </a>
+                    </h3>
+                </div> -->
+            <!-- </div> -->
+        </div>
+            
+
+    </div>
+
+    <footer class="text-center s p-4" style="background-color: #f2efea;">
+        <!-- Grid container -->
+        <div class="container p-4">
+            Send in your articles to studentpagemit@gmail.com
+        </div>
+        <!-- Grid container -->
+      
+        <!-- Copyright -->
+        <!-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div> -->
+        <!-- Copyright -->
+      </footer>
+    </div>
+    <script src="{{url_for('static', filename='map.js')}}">
+
+    </script>
+    </body>
+</html>
+
